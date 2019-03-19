@@ -1,0 +1,258 @@
+body
+{
+  font-family: Dancing Script;
+  color: white;
+  background: #02010a;
+}
+header
+{
+  background: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  display: flow-root;
+  width: 100%;
+  margin-bottom: auto 0px;
+  animation-name: brinco;
+  animation-duration: 2s;
+}
+@-webkit-keyframes brinco
+{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%
+  {
+    margin-top: 0%;
+  }
+}
+header h1
+{
+  text-shadow: 2px 2px 2px #02010a;
+  display: inline-flex;
+  padding-left: 3%;
+  width: auto;
+}
+header nav{
+  display:inline-flex;
+  float: right;
+  text-align: center;
+  padding-right: 3%;
+  padding-top: 14px;
+}
+nav li
+{
+  list-style: none;
+  display: inline-flex;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 1.2em;
+  text-decoration: white underline;
+  color: white;
+}
+img
+{
+  box-shadow: 2px 2px 2px  #02010a;
+}
+.contenedor1
+{
+  display: flex;
+  background: #82c3a6
+}
+.contenedor1 figure
+{
+  margin: 10px auto;
+  width: 60%;
+}
+.contenedor1 figure img
+{
+  width: 100%;
+
+}
+
+.contenedor2
+{
+  display: flex;
+  background:  #d5c75f;
+
+}
+.contenedor2 figure
+{
+  text-align: center;
+  color: black;
+  width: 50%;
+}
+.contenedor2 figure img
+{
+  width: 100%;
+}
+.contenedor2 figure figcaption
+{
+  text-decoration: black underline;
+  color: black
+}
+#imagen2:hover
+{
+  animation-duration: 2s ;
+  animation-name: animacion1;
+}
+@-webkit-keyframes animacion1 {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(10deg);
+  }
+  100%
+  {
+    transform: rotate(0deg);
+  }
+
+}
+#imagen3:hover
+{
+  animation-duration: 2s;
+  animation-name: animacion2;
+}
+@-webkit-keyframes animacion2 {
+30%
+  {
+
+  }
+  50%
+  {
+    transform: translate(  20px,-5px);
+  }
+}
+footer
+{
+  color: black;
+  display: flex;
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+footer div li
+{
+  list-style: none;
+  display: flex;
+  text-align: justify;
+}
+
+.pie
+{
+  width: 25%;
+  display: inline-block;
+  margin: 0%;
+}
+#redes li img{
+box-shadow: none;
+width: 25px;
+height: 25px;
+margin-right: 2px;
+color: black;
+}
+#redes ul :visited
+{
+  color : white;
+}
+.contenedorrios
+{
+  display: flex;
+  flex-flow: wrap;
+  background: #d5c75f;
+}
+.contenedorrios figure
+{
+  display: inline-block;
+  width: 25%;
+  margin: 3% ;
+
+}
+.contenedorrios figure img
+{
+  width: 100%;
+}
+.caja
+{
+  text-align: center;
+  width: 100%;
+}
+.efecto1
+{
+  -webkit-filter: blur(10px);
+ filter: blur(10px);
+}
+.efecto2, .efecto4, .efecto6
+{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.efecto3
+{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+@media  (max-width: 900px) {
+  header
+  {
+    display: flex;
+    flex-flow: column;
+  }
+  header h1
+  {
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+  }
+  header nav
+  {
+   display: flex;
+  }
+  header nav li
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header nav ul
+  {
+    margin: auto;
+    margin-bottom: 5%;
+   display: inline-flex;
+  }
+ .contenedor1 figure
+ {
+  width: 90%;
+ }
+ .contenedor2
+ {
+   flex-flow: column;
+ }
+ .contenedor2 figure
+ {
+   margin: auto;
+   margin-top: 5%;
+   width: 90%;
+ }
+ footer
+ {
+   flex-flow: column;
+ }
+.pie{
+  width: auto;
+  margin-left: 0%;
+  text-align: left;
+}
+.contenedorrios
+{
+  flex-flow: column;
+}
+.contenedorrios figure
+{
+  margin: 5%;
+
+  width: 90%;
+}
+}
